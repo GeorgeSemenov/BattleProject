@@ -1,0 +1,19 @@
+{
+  "name": "battleproject",
+  "version": "1.0.0",
+  "description": "It's my first battle project [for free]",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GeorgeSemenov/BattleProject.git"
+  },
+  "author": "Goshanbo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GeorgeSemenov/BattleProject/issues"
+  },
+  "homepage": "https://github.com/GeorgeSemenov/BattleProject#readme"
+}
