@@ -7,9 +7,22 @@ body {
 }
 nav {
   background-color: #33313f;
+  height: 70px;
 }
-nav .dropdown-menu {
+nav li.active {
+  background-color: #4aa850;
+}
+nav li .dropdown-menu {
   background-color: #4aa850;
   border-radius: 0;
-  margin-top: 0px;
+  margin-top: -1px;
+  border: 0px;
+}
+nav li .dropdown-menu a {
+  color: #fff;
+  padding-left: 8px;
+}
+nav li .dropdown-menu a:hover {
+  background-color: #5cbb69;
+  color: #fff;
 }

@@ -1,3 +1,4 @@
+@active-nav-element-color:#4aa850;
 @font-face{
     font-family:Roboto;
     src: url(../fonts/RobotoSlab-Regular.ttf);
@@ -7,10 +8,22 @@ body{
 }
 nav{
     background-color: #33313f;
-    .active{}
-    .dropdown-menu{
-        background-color: #4aa850;
-        border-radius: 0;
-        margin-top: -1px;
+    height: 70px;
+    li{
+            &.active{background-color: @active-nav-element-color;}
+            .dropdown-menu{
+                background-color: @active-nav-element-color;
+                border-radius: 0;
+                margin-top: -1px;
+                border: 0px;
+                a{
+                    color: #fff;
+                    padding-left: 8px;
+                }
+                a:hover{
+                    background-color: #5cbb69;
+                    color: #fff;
+                }
+        }
     }
 }
