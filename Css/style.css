@@ -26,3 +26,7 @@ nav li .dropdown-menu a:hover {
   background-color: #5cbb69;
   color: #fff;
 }
+.screen1 {
+  background-image: url(imgs/screen1Back.jpg);
+  color: red;
+}
