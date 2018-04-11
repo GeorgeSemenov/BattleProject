@@ -8,7 +8,9 @@ body{
 }
 nav{
     background-color: #33313f;
-    height: 70px;
+    @media (min-width: 992px){
+        height: 70px;
+    }
     li{
             &.active{background-color: @active-nav-element-color;}
             .dropdown-menu{
