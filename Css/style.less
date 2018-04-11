@@ -27,19 +27,28 @@ nav{
         }
     }
 }
-div#lakmus{
-    width: 100px;
-    height: 100px;
-    background-color: green;
-}
 
-@media (max-width: 1000px){
-//        background-position: 20% 0;
-    div#lakmus{background-color: red;}
-}
 .screen1{
     height: 100vh;
     background-image: url(../imgs/screen1Back.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    @media (max-width: 500px){background-position: 20% 0;}
+
+    .container{
+        height: 100%;
+
+        .text-container{
+            width: 540px;
+            height: auto;
+            background: rgba(0,0,0,0.4);
+            color: #fff;
+            padding: 35px 20px 20px 20px;
+            position: relative;
+            top: 25%;
+            left: 47%;
+
+            h1{font-size: 37px;}
+        }
+    }
 }
