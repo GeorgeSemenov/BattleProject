@@ -39,16 +39,27 @@ nav{
         height: 100%;
 
         .text-container{
-            width: 540px;
             height: auto;
             background: rgba(0,0,0,0.4);
             color: #fff;
-            padding: 35px 20px 20px 20px;
             position: relative;
             top: 25%;
-            left: 47%;
+            padding: 35px 20px 20px 20px;
 
-            h1{font-size: 37px;}
+            h1{font-size: 33px;}
+
+            @media (min-width: 992px){
+                width: 540px;
+                left: 46%;
+            }
+            @media (min-width: 576px) and (max-width: 991px){
+                width: 300px;
+                left: 30%;
+                top: 20%;
+            }
+            @media (max-width: 575px){
+                top: 15%;
+            }
         }
     }
 }

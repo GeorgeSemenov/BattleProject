@@ -41,15 +41,31 @@ nav li .dropdown-menu a:hover {
   height: 100%;
 }
 .screen1 .container .text-container {
-  width: 540px;
   height: auto;
   background: rgba(0, 0, 0, 0.4);
   color: #fff;
-  padding: 35px 20px 20px 20px;
   position: relative;
   top: 25%;
-  left: 47%;
+  padding: 35px 20px 20px 20px;
 }
 .screen1 .container .text-container h1 {
-  font-size: 37px;
+  font-size: 33px;
+}
+@media (min-width: 992px) {
+  .screen1 .container .text-container {
+    width: 540px;
+    left: 46%;
+  }
+}
+@media (min-width: 576px) and (max-width: 991px) {
+  .screen1 .container .text-container {
+    width: 300px;
+    left: 30%;
+    top: 20%;
+  }
+}
+@media (max-width: 575px) {
+  .screen1 .container .text-container {
+    top: 15%;
+  }
 }
