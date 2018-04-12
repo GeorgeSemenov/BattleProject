@@ -73,6 +73,26 @@ nav li .dropdown-menu a:hover {
     top: 15%;
   }
 }
-.screen2 ul {
-  list-style-image: url(../imgs/secondScreen/oneCent.png);
+.screen2 .container {
+  padding-top: 57px;
+}
+@media (min-width: 992px) {
+  .screen2 .container {
+    padding-top: 70px;
+  }
+}
+.screen2 .container div ul {
+  list-style: none;
+}
+.screen2 .container div ul li {
+  font-size: 25px;
+}
+.screen2 .container div ul li:before {
+  content: '';
+  display: inline-block;
+  background-image: url(../imgs/secondScreen/oneCent.png);
+  width: 16px;
+  height: 16px;
+  background-size: cover;
+  margin-right: 10px;
 }
