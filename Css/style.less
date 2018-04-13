@@ -41,7 +41,6 @@ nav{
         height: 100%;
 
         .text-container{
-//            height: auto;
             background: rgba(0,0,0,0.4);
             color: #fff;
             position: relative;
@@ -121,4 +120,37 @@ nav{
 
 .screen3{
     background-color: #f6f6f6;
+    padding-top: 35px;
+
+    .container{
+        ul.nav-tabs{
+            li.nav-item{
+                text-align: center;
+
+                a{
+                    background-color: #e6e4ef;
+                    color: #46454b;
+
+                    &.active{
+                        background-color: #5e606f;
+                        color:#fff;
+                    }
+                    &:hover:not(.active){
+                        background-color: #47a952;
+                        color:#fff;
+                    }
+                }
+            }
+        }
+        .tab-content{
+            .tab-pane{
+                .media{
+                    .media-body{padding-top: 40px;}
+                    div{
+                        img{width: 100%;}
+                    }
+                }
+            }
+        }
+    }
 }
