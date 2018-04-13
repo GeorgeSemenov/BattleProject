@@ -41,6 +41,8 @@ nav{
         height: 100%;
 
         .text-container{
+            max-height: 78vh;
+            overflow: scroll;
             height: auto;
             background: rgba(0,0,0,0.4);
             color: #fff;
@@ -67,12 +69,14 @@ nav{
 }
 
 .screen2{
-    background-image: url("../imgs/secondScreen/Screen%20image.png");
-    background-repeat: no-repeat;
-    background-position: right center;
 
+    @media (min-width: 992px ){
+        background-image: url("../imgs/secondScreen/Screen%20image.png");
+        background-repeat: no-repeat;
+        background-position: right center;
+        background-position: 103% center;
+    }
     @media (min-width: 992px ) and (max-width: 1200px ){background-size: 440px;}
-    @media (min-width: 1200px ){background-position: 103% center;}
 
     .container{
         @media (min-width: 992px ){
