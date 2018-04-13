@@ -67,30 +67,43 @@ nav{
 }
 
 .screen2{
+    background-image: url("../imgs/secondScreen/Screen%20image.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+
+    @media (min-width: 992px ) and (max-width: 1200px ){background-size: 440px;}
+    @media (min-width: 1200px ){background-position: 103% center;}
+
     .container{
-        @media (min-width: 992px ){padding-top: 70px;}
+        @media (min-width: 992px ){
+            padding-top: 70px;
+            padding-bottom: 80px;
+        }
         padding-top: 57px;
+        padding-bottom: 30px;
 
-        div{
+        &>div{
+
             ul{
+                list-style: none;
 
-            list-style: none;
+                li {
+                    font-size: 25px;
 
-            li {
-                font-size: 25px;
+                    &:before{
+                        content: '';
+                        display: inline-block;
+                        background-image: url(../imgs/secondScreen/oneCent.png);
+                        @list-marker-side: 16px;
+                        width: @list-marker-side;
 
-                &:before{
-                    content: '';
-                    display: inline-block;
-                    background-image: url(../imgs/secondScreen/oneCent.png);
-                    @list-marker-side: 16px;
-                    width: @list-marker-side;
-                    height: @list-marker-side;
-                    background-size: cover;
-                    margin-right: 10px;
+                        height: @list-marker-side;
+                        background-size: cover;
+                        margin-right: 10px;
+                    }
                 }
             }
-            }}
+        }
 
     }
 }
