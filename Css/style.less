@@ -41,9 +41,7 @@ nav{
         height: 100%;
 
         .text-container{
-            max-height: 78vh;
-            overflow: scroll;
-            height: auto;
+//            height: auto;
             background: rgba(0,0,0,0.4);
             color: #fff;
             position: relative;
@@ -56,13 +54,22 @@ nav{
                 width: 540px;
                 left: 46%;
             }
-            @media (min-width: 576px) and (max-width: 991px){
+            @media (min-width: 576px) and (max-width: 991px) and (orientation: portrait){
                 width: 300px;
                 left: 30%;
                 top: 20%;
             }
+            @media (min-width: 576px) and (max-width: 991px) and (orientation: landscape){
+                top: 16%;
+                padding: 15px;
+            }
+            @media (max-width: 575px) and (orientation: landscape){
+                max-height: 78vh;
+                overflow: scroll;
+                top: 20% !important;
+            }
             @media (max-width: 575px){
-                top: 15%;
+                top: 12%;
             }
         }
     }
@@ -110,4 +117,8 @@ nav{
         }
 
     }
+}
+
+.screen3{
+    background-color: #f6f6f6;
 }
