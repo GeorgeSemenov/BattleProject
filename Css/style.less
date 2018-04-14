@@ -54,22 +54,28 @@ nav{
                 left: 46%;
             }
             @media (min-width: 576px) and (max-width: 991px) and (orientation: portrait){
-                width: 300px;
+//                min-width: 300px;
                 left: 30%;
                 top: 20%;
+                max-height: 70vh;
             }
             @media (min-width: 576px) and (max-width: 991px) and (orientation: landscape){
                 top: 16%;
                 padding: 15px;
+                max-height: 75vh;
             }
             @media (max-width: 575px) and (orientation: landscape){
                 max-height: 78vh;
                 overflow: scroll;
                 top: 20% !important;
             }
-            @media (max-width: 575px){
+            @media (max-width: 575px)  and (orientation: portrait){
                 top: 12%;
+                padding: 15px;
+                max-height: 80vh;
             }
+            @media (aspect-ratio: 480/320){overflow: scroll;}
+
         }
     }
 }
@@ -157,6 +163,19 @@ nav{
 
 .screen4{
     .container{
+
+        h1{
+            @media (max-width: 576px ){
+                font-size: 20px;
+            }
+            media (min-width: 577px ) and (max-width: 992px ){
+                font-size: 20px;
+            }
+//            media (max-width: 576px ){
+//                font-size: 20px;
+//            }
+
+        }
         table{
             th,td{text-align: center;}
             th:first-child,td:first-child {text-align: left;}
