@@ -30,8 +30,8 @@ nav{
     }
 }
 
-.screen1{
-    height: 100vh;
+.about_us{
+    &,.row { height: 100vh;}
     background-image: url(../imgs/screen1Back.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -39,42 +39,47 @@ nav{
 
     .container{
         height: 100%;
+        padding-top: 5%;
 
         .text-container{
             background: rgba(0,0,0,0.4);
             color: #fff;
             position: relative;
-            top: 25%;
             padding: 35px 20px 20px 20px;
-
+            overflow: auto;
+            max-height: 80vh;
             h1{font-size: 33px;}
 
-            @media (min-width: 992px){
-                width: 540px;
-                left: 46%;
-            }
-            @media (min-width: 576px) and (max-width: 991px) and (orientation: portrait){
-                width: 300px;
-                left: 30%;
-                top: 20%;
-            }
-            @media (min-width: 576px) and (max-width: 991px) and (orientation: landscape){
-                top: 16%;
+//            @media (min-width: 992px){
+//                width: 540px;
+//                left: 46%;
+//            }
+//            @media (min-width: 576px) and (max-width: 991px) and (orientation: portrait){
+////                min-width: 300px;
+//                left: 30%;
+//                top: 20%;
+//                max-height: 70vh;
+//            }
+//            @media (min-width: 576px) and (max-width: 991px) and (orientation: landscape){
+//                top: 16%;
+//                padding: 15px;
+//                max-height: 75vh;
+//            }
+//            @media (max-width: 575px) and (orientation: landscape){
+//                max-height: 78vh;
+//                overflow: scroll;
+//                top: 20% !important;
+//            }
+            @media (max-width: 991px){
+//                top: 6%;
                 padding: 15px;
             }
-            @media (max-width: 575px) and (orientation: landscape){
-                max-height: 78vh;
-                overflow: scroll;
-                top: 20% !important;
-            }
-            @media (max-width: 575px){
-                top: 12%;
-            }
+
         }
     }
 }
 
-.screen2{
+.wishing{
 
     @media (min-width: 992px ){
         background-image: url("../imgs/secondScreen/Screen%20image.png");
@@ -118,9 +123,10 @@ nav{
     }
 }
 
-.screen3{
+.level_of_training{
     background-color: #f6f6f6;
     padding-top: 35px;
+    padding-bottom: 15px;
 
     .container{
         ul.nav-tabs{
@@ -151,6 +157,30 @@ nav{
                     }
                 }
             }
+        }
+    }
+}
+
+.prices{
+    .container{
+        padding-top: 10px;
+
+        h1{
+            @media (max-width: 576px ){
+                font-size: 20px;
+            }
+            media (min-width: 577px ) and (max-width: 992px ){
+                font-size: 20px;
+            }
+//            media (max-width: 576px ){
+//                font-size: 20px;
+//            }
+
+        }
+        table{
+            th,td{text-align: center;}
+            th:first-child,td:first-child {text-align: left;}
+            td:last-child{font-weight: 900;}
         }
     }
 }
