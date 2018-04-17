@@ -164,10 +164,27 @@ nav{
     color: #fff;
     .container{
         h1{.head1-mixin();}
+        ul{
+            list-style: none;
+            li:before{
+                content: "●";
+                color: red;
+                font-size: 30px;
+                position: absolute;
+                left: 30px;
+                margin-top: -12px;
+            }
+        }
         form{
             label{
                 font-size: 33px;
                 @media (max-width: 992px ){font-size: 30px;}
+            }
+            button{
+                @button-color:#41ab4f;
+                background-color:@button-color;
+                border-color: @button-color;
+                &:focus{box-shadow: 0 0 0 0.2rem  @button-color;}
             }
         }
 
