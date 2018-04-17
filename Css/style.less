@@ -3,6 +3,12 @@
     font-family:Roboto;
     src: url(../fonts/RobotoSlab-Regular.ttf);
 }
+.head1-mixin{
+    text-align: center;
+    @media (max-width: 575px ){font-size: 1rem;}
+    @media (min-width: 576px ) and (max-width: 767px ){font-size: 1.5rem;}
+    @media (min-width: 768px ) and (max-width: 991px ){font-size: 2rem;}
+}
 body{
     font-family: Rogoto !important;
 }
@@ -49,29 +55,7 @@ nav{
             overflow: auto;
             max-height: 80vh;
             h1{font-size: 33px;}
-
-//            @media (min-width: 992px){
-//                width: 540px;
-//                left: 46%;
-//            }
-//            @media (min-width: 576px) and (max-width: 991px) and (orientation: portrait){
-////                min-width: 300px;
-//                left: 30%;
-//                top: 20%;
-//                max-height: 70vh;
-//            }
-//            @media (min-width: 576px) and (max-width: 991px) and (orientation: landscape){
-//                top: 16%;
-//                padding: 15px;
-//                max-height: 75vh;
-//            }
-//            @media (max-width: 575px) and (orientation: landscape){
-//                max-height: 78vh;
-//                overflow: scroll;
-//                top: 20% !important;
-//            }
             @media (max-width: 991px){
-//                top: 6%;
                 padding: 15px;
             }
 
@@ -165,22 +149,27 @@ nav{
     .container{
         padding-top: 10px;
 
-        h1{
-            @media (max-width: 576px ){
-                font-size: 20px;
-            }
-            media (min-width: 577px ) and (max-width: 992px ){
-                font-size: 20px;
-            }
-//            media (max-width: 576px ){
-//                font-size: 20px;
-//            }
-
-        }
+        h1{.head1-mixin();}
         table{
             th,td{text-align: center;}
             th:first-child,td:first-child {text-align: left;}
             td:last-child{font-weight: 900;}
         }
+    }
+}
+
+.discounts{
+    background-color: #5c5e6b;
+    padding: 20px 0;
+    color: #fff;
+    .container{
+        h1{.head1-mixin();}
+        form{
+            label{
+                font-size: 33px;
+                @media (max-width: 992px ){font-size: 30px;}
+            }
+        }
+
     }
 }
