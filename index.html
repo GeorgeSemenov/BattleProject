@@ -19,32 +19,32 @@
             <div class="collapse navbar-collapse" id="navbarTogglerMenu">
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                     <li class="nav-item">
-                      <a class="nav-link" href="#">О нас<span class="sr-only">(current)</span></a>
+                      <a class="nav-link" data-value="about_us" href="#">О нас<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Желающим</a>
+                      <a class="nav-link" data-value="wishing" href="#">Желающим</a>
                     </li>
                     <li class="nav-item active dropdown">
                         <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Выпадающее меню</a>
                         <div class="dropdown-menu">
-                            <a href="#" class="dropdown-item">Уровень подготовки</a>
-                            <a href="#" class="dropdown-item">Цены</a>
-                            <a href="#" class="dropdown-item">Скидки</a>
-                            <a href="#" class="dropdown-item">Подход</a>
-                            <a href="#" class="dropdown-item">Методы обучения</a>
-                            <a href="#" class="dropdown-item">Наша команда</a>
-                            <a href="#" class="dropdown-item">Изучаемые языки</a>
+                            <a href="#" data-value="level_of_training" class="dropdown-item">Уровень подготовки</a>
+                            <a href="#" data-value="prices" class="dropdown-item">Цены</a>
+                            <a href="#" data-value="discounts" class="dropdown-item">Скидки</a>
+                            <a href="#" data-value="individual_approach" class="dropdown-item">Подход</a>
+                            <a href="#" data-value="teaching_methods" class="dropdown-item">Методы обучения</a>
+                            <a href="#" data-value="team" class="dropdown-item">Наша команда</a>
+                            <a href="#" data-value="languages" class="dropdown-item">Изучаемые языки</a>
                         </div>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Форма обратной связи</a>
+                      <a class="nav-link" data-value="feedback" href="#">Форма обратной связи</a>
                     </li>
                 </ul>
             </div>
             <a href="#" class="navbar-brand d-none d-lg-block">+7 495 123 45 67</a>
         </div>
     </nav>
-    <div class="about_us">
+    <div class="about_us" id="about_us">
         <div class="container">
           <div class="row">
            <div class="col-md-9 col-lg-6 ml-md-auto d-flex ">
@@ -68,7 +68,7 @@
           </div>
         </div>
     </div>
-    <div class="wishing">
+    <div class="wishing" id="wishing">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-8 col-xl-7">
@@ -89,7 +89,7 @@
             </div>
         </div>
     </div>
-    <div class="level_of_training">
+    <div class="level_of_training" id="level_of_training">
         <div class="container">
             <ul class="nav nav-tabs" id="myTab" role="tablist">
               <li class="nav-item col-12 col-md-4">
@@ -139,7 +139,7 @@
             </div>
         </div>
     </div>
-    <div class="prices">
+    <div class="prices" id="prices">
         <div class="container">
              <h1 class="h1-resp-style">ЦЕНЫ НА ИЗУЧЕНИЕ АНГЛИЙСКОГО&nbsp;В&nbsp;ИНТЕРЦЕНТРЕ</h1>
              <h5>Наши цены приятно удивят вас. Подробности об акциях узнавайте и у диллеров.</h5>
@@ -197,7 +197,7 @@
         </div>
 
     </div>
-    <div class="discounts">
+    <div class="discounts" id="discounts">
         <div class="container">
             <h1 class="h1-resp-style">МЫ ПРЕДЛАГАЕМ ИНДИВИДУАЛЬНЫЕ "АНГЛИЙСКИЕ&nbsp;СКИДКИ"</h1>
             <div class="row">
@@ -221,7 +221,7 @@
             </div>
         </div>
     </div>
-    <div class="individual_approach">
+    <div class="individual_approach" id="individual_approach">
         <div class="container">
             <div>
                 <h1 class="h1-resp-style">ИНДИВИДУАЛЬНЫЙ ПОДХОД</h1>
@@ -248,7 +248,7 @@
             </div>
         </div>
     </div>
-    <div class="teaching_methods">
+    <div class="teaching_methods" id="teaching_methods">
         <div class="container">
             <div class="row flex-column flex-md-row">
                 <div class="embed-responsive embed-responsive-16by9 col-12 col-md-6 col-lg-5 order-12 order-md-0">
@@ -285,7 +285,7 @@
             </div>
         </div>
     </div>
-    <div class="team">
+    <div class="team" id="team">
         <div class="container cntr">
             <h1 class="h1-resp-style">НАША КОМАНДА</h1>
             <p>Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa.Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa.</p>
@@ -313,7 +313,7 @@
             </div>
         </div>
     </div>
-    <div class="languages">
+    <div class="languages" id="languages">
         <div class="container cntr">
             <h1 class="h1-resp-style">ИНТОСТРАННЫЕ ЯЗЫКИ</h1>
             <p>Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa.Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa.</p>
@@ -336,7 +336,7 @@
             </div>
         </div>
     </div>
-    <div class="feedback">
+    <div class="feedback" id="feedback">
         <div class="container">
            <div class="row">
                 <div class="col-12 col-md-6 d-flex flex-wrap">
@@ -398,5 +398,6 @@
 <!--     Если поставить bootstrap.min.js перед jquery [по коду], то bootstrap может загрузиться быстрее jquery и это может привести к различным неполадкам, к примеру dropdown перестанет работать.-->
      <script src='Js/bootstrap.min.js'></script>
      <script src='Js/popper.min.js'></script>
+     <script src='Js/script.js'></script>
 </body>
 </html>
