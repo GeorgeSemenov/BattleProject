@@ -3,6 +3,10 @@
     font-family:Roboto;
     src: url(../fonts/RobotoSlab-Regular.ttf);
 }
+@sm: 576px;
+@md: 768px;
+@lg: 992px;
+@xl: 1200px;
 .h1-resp-style{
     text-align: center;
     @media (max-width: 575px ){font-size: 1rem;}
@@ -14,7 +18,7 @@
     text-align: center;
     @media (max-width: 575px ){font-size: 1rem;}
     @media (min-width: 576px ) and (max-width: 767px ){font-size: 1.4rem;}
-    @media (min-width: 768px ) and (max-width: 991px ){font-size: 1.75rem;}
+    @media (min-width: 768px ){font-size: 1.70rem;}
 }
 .round{border-radius: 50%;}
 .emphasized{
@@ -23,11 +27,31 @@
 .cntr{
     text-align: center;
     &-md{
-            @media (min-width: 768px ){
-                text-align: center;
-                &-none{text-align:inherit;}
-            }
+        @media (min-width: 768px ){
+            text-align: center;
+            &-none{text-align:inherit;}
         }
+    }
+}
+
+form button{
+    @button-color:#41ab4f;
+    background-color:@button-color !important;
+    border-color: @button-color !important;
+    &:focus{box-shadow: 0 0 0 0.2rem  @button-color  !important;}
+}
+.textr{
+    text-align: right;
+    &-md{
+        @media (min-width: @md ){
+            text-align: right;
+            &-none{text-align:inherit;}
+        }
+    }
+}
+.hover-time(){
+    background-color: #5cbb69;
+    color: #fff;
 }
 body{
     font-family: Rogoto !important;
@@ -49,8 +73,7 @@ nav{
                     padding-left: 8px;
                 }
                 a:hover{
-                    background-color: #5cbb69;
-                    color: #fff;
+                    .hover-time();
                 }
         }
     }
@@ -193,12 +216,7 @@ nav{
                 font-size: 33px;
                 @media (max-width: 992px ){font-size: 30px;}
             }
-            button{
-                @button-color:#41ab4f;
-                background-color:@button-color;
-                border-color: @button-color;
-                &:focus{box-shadow: 0 0 0 0.2rem  @button-color;}
-            }
+
         }
 
     }
@@ -240,6 +258,57 @@ nav{
                 background-color: #8c8992;
                 border: 2px solid black;
                 img{padding: 0px;}
+            }
+        }
+    }
+}
+
+.feedback{
+    padding: 30px 0px;
+    .container{
+        .row{
+            position: relative; //Эта строка нужна, чтобы div в котором будет форма занимал 100% высоты
+            div:first-child{
+                ul{
+                    list-style: none;
+                    padding: 0;
+                    text-align: center;
+
+                    li{
+                        display: inline-block;
+                        padding: 0 5px;
+                        &:hover{
+                            .hover-time();
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+            .social-net{
+                @media (min-width: @md ){
+                    height: 100%;//эти три строки и следующая нужны, чтобы блок принял крайнее правое положение
+                    position: absolute;//в row и притом имел высоту 100% т.е. равную высоте родителя, если не
+                    right: 0;//указать position absolute то height 100% не будет работать
+                }
+                @media (max-width: (@md - 1) ){text-align: center !important ;}
+
+                form{
+                    @media (min-width: @md ){
+                        position: absolute;//Эта строка и последующая нужны чтобы форма была прижата
+                        bottom: 0;//к дну блока .social-net
+                    }
+                    h3{font-weight: 900;}
+                    div{padding-right: 0px;}
+                    small{font-size: 15px;}
+                }
+
+                .social-net-icons{
+                    height: 25px;
+                    a{
+                        height: 100%;
+                        img{height: 100%;}
+                    }
+                }
             }
         }
     }
