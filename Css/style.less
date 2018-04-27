@@ -49,8 +49,9 @@ form button{
         }
     }
 }
+@active-nav-dropdown-element-color:#5cbb69;
 .hover-time(){
-    background-color: #5cbb69;
+    background-color: @active-nav-dropdown-element-color;
     color: #fff;
 }
 body{
@@ -62,7 +63,7 @@ nav{
         height: 70px;
     }
     li{
-            &.active{background-color: @active-nav-element-color;}
+            a.active{background-color: @active-nav-element-color;}
             .dropdown-menu{
                 background-color: @active-nav-element-color;
                 border-radius: 0;
@@ -71,6 +72,8 @@ nav{
                 a{
                     color: #fff;
                     padding-left: 8px;
+
+                    &.active{background-color: @active-nav-dropdown-element-color;}
                 }
                 a:hover{
                     .hover-time();
