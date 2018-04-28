@@ -1,0 +1,331 @@
+@font-face {
+  font-family: Roboto;
+  src: url(../fonts/RobotoSlab-Regular.ttf);
+}
+.h1-resp-style {
+  text-align: center;
+}
+@media (max-width: 575px) {
+  .h1-resp-style {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .h1-resp-style {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .h1-resp-style {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 992px) {
+  .h1-resp-style {
+    font-size: 2.3rem;
+  }
+}
+.h3-resp-style {
+  text-align: center;
+}
+@media (max-width: 575px) {
+  .h3-resp-style {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .h3-resp-style {
+    font-size: 1.4rem;
+  }
+}
+@media (min-width: 768px) {
+  .h3-resp-style {
+    font-size: 1.70rem;
+  }
+}
+.round {
+  border-radius: 50%;
+}
+.emphasized {
+  color: #af787b;
+}
+.cntr {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .cntr-md {
+    text-align: center;
+  }
+  .cntr-md-none {
+    text-align: inherit;
+  }
+}
+form button {
+  background-color: #41ab4f !important;
+  border-color: #41ab4f !important;
+}
+form button:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem #41ab4f !important;
+  box-shadow: 0 0 0 0.2rem #41ab4f !important;
+}
+.textr {
+  text-align: right;
+}
+@media (min-width: 768px) {
+  .textr-md {
+    text-align: right;
+  }
+  .textr-md-none {
+    text-align: inherit;
+  }
+}
+body {
+  font-family: Rogoto !important;
+}
+nav {
+  background-color: #33313f;
+}
+@media (min-width: 992px) {
+  nav {
+    height: 70px;
+  }
+}
+nav li a.active {
+  background-color: #4aa850;
+}
+nav li .dropdown-menu {
+  background-color: #4aa850;
+  border-radius: 0;
+  margin-top: -1px;
+  border: 0px;
+}
+nav li .dropdown-menu a {
+  color: #fff;
+  padding-left: 8px;
+}
+nav li .dropdown-menu a.active {
+  background-color: #5cbb69;
+}
+nav li .dropdown-menu a:hover {
+  background-color: #5cbb69;
+  color: #fff;
+}
+.about_us {
+  background-image: url(../imgs/screen1Back.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.about_us,
+.about_us .row {
+  height: 100vh;
+}
+@media (max-width: 500px) {
+  .about_us {
+    background-position: 20% 0;
+  }
+}
+.about_us .container {
+  height: 100%;
+  padding-top: 5%;
+}
+.about_us .container .text-container {
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  position: relative;
+  padding: 35px 20px 20px 20px;
+  overflow: auto;
+  max-height: 80vh;
+}
+@media (min-width: 992px) {
+  .wishing {
+    background-image: url("../imgs/secondScreen/Screen%20image.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-position: 103% center;
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .wishing {
+    background-size: 440px;
+  }
+}
+.wishing .container {
+  padding-top: 57px;
+  padding-bottom: 30px;
+}
+@media (min-width: 992px) {
+  .wishing .container {
+    padding-top: 70px;
+    padding-bottom: 80px;
+  }
+}
+.wishing .container > div ul {
+  list-style: none;
+}
+.wishing .container > div ul li {
+  font-size: 25px;
+}
+.wishing .container > div ul li:before {
+  content: '';
+  display: inline-block;
+  background-image: url(../imgs/secondScreen/oneCent.png);
+  width: 16px;
+  height: 16px;
+  background-size: cover;
+  margin-right: 10px;
+}
+.level_of_training {
+  background-color: #f6f6f6;
+  padding-top: 35px;
+  padding-bottom: 15px;
+}
+.level_of_training .container ul.nav-tabs li.nav-item {
+  text-align: center;
+}
+.level_of_training .container ul.nav-tabs li.nav-item a {
+  background-color: #e6e4ef;
+  color: #46454b;
+}
+.level_of_training .container ul.nav-tabs li.nav-item a.active {
+  background-color: #5e606f;
+  color: #fff;
+}
+.level_of_training .container ul.nav-tabs li.nav-item a:hover:not(.active) {
+  background-color: #47a952;
+  color: #fff;
+}
+.level_of_training .container .tab-content .tab-pane .media .media-body {
+  padding-top: 40px;
+}
+.level_of_training .container .tab-content .tab-pane .media div img {
+  width: 100%;
+}
+.prices .container {
+  padding-top: 10px;
+}
+.prices .container table th,
+.prices .container table td {
+  text-align: center;
+}
+.prices .container table th:first-child,
+.prices .container table td:first-child {
+  text-align: left;
+}
+.prices .container table td:last-child {
+  font-weight: 900;
+}
+.discounts {
+  background-color: #5c5e6b;
+  padding: 20px 0;
+  color: #fff;
+}
+.discounts .container ul {
+  list-style: none;
+}
+.discounts .container ul li {
+  position: relative;
+}
+.discounts .container ul li img {
+  height: 15px;
+  position: absolute;
+  top: 5px;
+  left: -30px;
+}
+.discounts .container form label {
+  font-size: 33px;
+}
+@media (max-width: 992px) {
+  .discounts .container form label {
+    font-size: 30px;
+  }
+}
+.individual_approach {
+  padding: 20px 0;
+}
+.individual_approach .container div {
+  text-align: center;
+}
+.individual_approach .container div h5 {
+  color: #af787b;
+}
+.individual_approach .container div h1 {
+  font-weight: 900;
+}
+.teaching_methods {
+  background-color: #f6f6f6;
+  padding: 30px 0px;
+}
+.teaching_methods .container .row {
+  margin-bottom: 30px;
+}
+.team {
+  padding: 30px 0px;
+}
+.languages {
+  padding: 30px 0px;
+  background-color: #5c5e6b;
+  color: #fff;
+}
+.languages .container .row div > div {
+  background-color: #8c8992;
+  border: 2px solid black;
+}
+.languages .container .row div > div img {
+  padding: 0px;
+}
+.feedback {
+  padding: 30px 0px;
+}
+.feedback .container .row {
+  position: relative;
+}
+.feedback .container .row div:first-child ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+.feedback .container .row div:first-child ul li {
+  display: inline-block;
+  padding: 0 5px;
+}
+.feedback .container .row div:first-child ul li:hover {
+  background-color: #5cbb69;
+  color: #fff;
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  .feedback .container .row .social-net {
+    height: 100%;
+    position: absolute;
+    right: 0;
+  }
+}
+@media (max-width: 767px) {
+  .feedback .container .row .social-net {
+    text-align: center !important ;
+  }
+}
+@media (min-width: 768px) {
+  .feedback .container .row .social-net form {
+    position: absolute;
+    bottom: 0;
+  }
+}
+.feedback .container .row .social-net form h3 {
+  font-weight: 900;
+}
+.feedback .container .row .social-net form div {
+  padding-right: 0px;
+}
+.feedback .container .row .social-net form small {
+  font-size: 15px;
+}
+.feedback .container .row .social-net .social-net-icons {
+  height: 25px;
+}
+.feedback .container .row .social-net .social-net-icons a {
+  height: 100%;
+}
+.feedback .container .row .social-net .social-net-icons a img {
+  height: 100%;
+}

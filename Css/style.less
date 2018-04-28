@@ -205,13 +205,22 @@ nav{
     .container{
         ul{
             list-style: none;
-            li:before{
-                content: "●";
-                color: red;
-                font-size: 30px;
-                position: absolute;
-                left: 30px;
-                margin-top: -12px;
+//            li:before{
+//                content: "●";
+//                color: red;
+//                font-size: 30px;
+//                position: absolute;
+//                left: 30px;
+//                margin-top: -12px;
+//            }
+            li {
+                position: relative;
+                img{
+                    height: 15px;
+                    position: absolute;
+                    top: 5px;
+                    left: -30px;
+                }
             }
         }
         form{
